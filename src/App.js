@@ -5,6 +5,7 @@ class App extends React.Component {
     constructor() {
         super();
     }
+
     render() {
         return (
             <div className="container">
@@ -14,7 +15,9 @@ class App extends React.Component {
                         defaultValue="0"
                     />
                     <div className="buttons">
-                        <button>1</button>
+                        {store.buttons.map((item) => {
+                            return <button>{item.val}</button>
+                        })}
                     </div>
                 </div>
             </div>
