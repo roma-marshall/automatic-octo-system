@@ -16,7 +16,7 @@ class App extends React.Component {
                     />
                     <div className="buttons">
                         {store.buttons.map((item) => {
-                            return <button>{item.val}</button>
+                            return <button className="font-bold ml-3 py-2 px-4 rounded text-white bg-amber-500 hover:bg-amber-600/90">{item.val}</button>
                         })}
                     </div>
                 </div>
