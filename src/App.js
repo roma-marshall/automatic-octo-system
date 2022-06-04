@@ -14,6 +14,7 @@ class App extends React.Component {
             <div className="container">
                 <div className="output">
                     <input
+                        className="border m-3 py-1 px-2"
                         type="text"
                         defaultValue={this.state.out}
                     />
