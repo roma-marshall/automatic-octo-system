@@ -9,6 +9,10 @@ class App extends React.Component {
         }
     }
 
+    tapeNumber(value) {
+
+    }
+
     render() {
         return (
             <div className="container mt-10 w-min m-auto p-5 bg-gray-700/20 text-center rounded">
@@ -21,6 +25,9 @@ class App extends React.Component {
                     <div className="buttons">
                         {store.buttons.map((item) =>
                             <button
+                                onClick={() => {
+                                    this.tapeNumber(item.val)
+                                }}
                                 className="font-bold m-1 py-2 px-4 rounded text-white bg-amber-500 hover:bg-amber-600/90">{item.val}</button>
                         )}
                     </div>
