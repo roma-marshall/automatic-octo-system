@@ -10,7 +10,11 @@ class App extends React.Component {
     }
 
     tapeNumber(value) {
+        let currentValue = value
 
+        this.setState({
+            out: currentValue
+        })
     }
 
     render() {
