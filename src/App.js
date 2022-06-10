@@ -7,6 +7,7 @@ class App extends React.Component {
         this.state = {
             out: '0'
         }
+        this.refOutput = React.createRef()
     }
 
     tapeNumber(value) {
@@ -22,6 +23,7 @@ class App extends React.Component {
             <div className="container mt-10 w-min m-auto p-5 bg-gray-700/20 text-center rounded">
                 <div className="output">
                     <input
+                        ref={this.refOutput}
                         className="border m-3 py-1 px-2"
                         type="text"
                         defaultValue={this.state.out}
