@@ -31,6 +31,8 @@ class App extends React.Component {
             output.value.length === 1 ? output.value = '0' : output.value = output.value.substring(0, output.value.length - 1)
         } else if (value === 'C') {
             output.value = '0'
+        } else if (value === '=') {
+            output.value = eval(output.value)
         }
     }
 
