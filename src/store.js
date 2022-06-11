@@ -13,10 +13,12 @@ let store = {
         {val: '1'},
         {val: '+'},
         {val: '/'},
-        {val: '0'},
+        {val: '0'}
+    ],
+    operations: [
         {val: 'C'},
         {val: '='},
-        {val: 'CE'},
+        {val: 'CE'}
     ]
 }
 
