@@ -30,6 +30,10 @@ class App extends React.Component {
         if (value === 'CE') {
             output.value.length === 1 ? output.value = '0' : output.value = output.value.substring(0, output.value.length - 1)
         }
+
+        if (value === 'C') {
+            output.value = '0'
+        }
     }
 
     render() {
