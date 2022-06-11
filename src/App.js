@@ -12,10 +12,11 @@ class App extends React.Component {
 
     tapeNumber(value) {
         let currentValue = value
-
+        let output = this.refOutput.current
         this.setState({
             out: currentValue
         })
+        output.value = currentValue;
     }
 
     render() {
