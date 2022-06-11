@@ -13,6 +13,7 @@ class App extends React.Component {
     tapeNumber(value) {
         let currentValue = value
         let output = this.refOutput.current
+
         this.setState({
             out: currentValue
         })
@@ -23,8 +24,8 @@ class App extends React.Component {
         output.value += currentValue
     }
 
-    tapeOperation() {
-        
+    tapeOperation(value) {
+        let output = this.refOutput.current
     }
 
     render() {
