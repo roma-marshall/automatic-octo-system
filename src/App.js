@@ -32,7 +32,11 @@ class App extends React.Component {
         } else if (value === 'C') {
             output.value = '0'
         } else if (value === '=') {
-            output.value = eval(output.value)
+            try {
+                output.value = eval(output.value)
+            } catch {
+                output.value = 'Error'
+            }
         }
     }
 
