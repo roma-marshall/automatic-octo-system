@@ -16,7 +16,11 @@ class App extends React.Component {
         this.setState({
             out: currentValue
         })
-        output.value = currentValue;
+
+        if (output.value === '0') {
+            output.value = ''
+        }
+        output.value += currentValue
     }
 
     render() {
