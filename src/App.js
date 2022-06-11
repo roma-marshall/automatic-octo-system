@@ -28,7 +28,11 @@ class App extends React.Component {
         let output = this.refOutput.current
 
         if (value === 'CE') {
-            output.value = output.value.substring(0, output.value.length - 1)
+            if (output.value.length === 1) {
+                output.value = '0'
+            } else {
+                output.value = output.value.substring(0, output.value.length - 1)
+            }
         }
     }
 
