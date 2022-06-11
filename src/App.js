@@ -26,6 +26,10 @@ class App extends React.Component {
 
     tapeOperation(value) {
         let output = this.refOutput.current
+
+        if (value === 'CE') {
+            output.value = output.value.substring(0, output.value.length - 1)
+        }
     }
 
     render() {
