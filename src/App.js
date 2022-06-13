@@ -54,15 +54,17 @@ class App extends React.Component {
                         defaultValue={this.state.out}
                     />
                     <div className="buttons">
-                        {store.buttons.map((item) =>
+                        {store.buttons.map((item, index) =>
                             <button
+                                key={index}
                                 onClick={() => {
                                     this.tapeNumber(item.val)
                                 }}
                                 className="font-bold m-1 py-2 px-4 rounded text-white bg-amber-500 hover:bg-amber-600/90">{item.val}</button>
                         )}
-                        {store.operations.map((item) =>
+                        {store.operations.map((item, index) =>
                             <button
+                                key={index}
                                 onClick={() => {
                                     this.tapeOperation(item.val)
                                 }}
