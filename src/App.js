@@ -36,6 +36,9 @@ class App extends React.Component {
                 output.value = eval(output.value)
             } catch {
                 output.value = 'Error'
+                setTimeout(() => {
+                    output.value = '0'
+                }, 1500)
             }
         }
     }
